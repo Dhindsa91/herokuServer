@@ -47,6 +47,10 @@ function verifyToken(req, res, next) {
     }
 }
 
+app.get("/", function(req, res, next){
+    res.send("Hello World");
+})
+
 
 app.post("/register", function(req, res, next){
     const {username, password} = req.body;
